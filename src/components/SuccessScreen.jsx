@@ -20,6 +20,7 @@ export default function SuccessScreen({ username, winner, top5, greekPos, songs,
           {winnerSong?.flag} {winnerSong?.country} — {winnerSong?.song}
         </p>
 
+        {/* TOP 5 section — temporarily disabled
         <p style={{ fontSize: '0.85rem', color: 'var(--cyan)', marginBottom: '6px' }}>
           ▶ TOP 5:
         </p>
@@ -30,7 +31,7 @@ export default function SuccessScreen({ username, winner, top5, greekPos, songs,
               {i + 1}. {s?.flag} {s?.country}
             </p>
           )
-        })}
+        })} */}
 
         <p style={{ fontSize: '0.85rem', color: 'var(--cyan)', marginBottom: '6px', marginTop: '14px' }}>
           ▶ GREEK SONG (FERTO) POSITION:

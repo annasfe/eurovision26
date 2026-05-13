@@ -5,8 +5,7 @@ export default function WinnerTab({ winner, setWinner }) {
     <div>
       <h2 style={{ marginBottom: '6px' }}>PICK THE WINNER</h2>
       <p style={{ fontSize: '0.85rem', color: '#888', marginBottom: '16px', lineHeight: 1.8 }}>
-        SELECT THE COUNTRY YOU THINK WILL WIN<br/>
-        EUROVISION 2026 IN VIENNA!
+        SELECT THE COUNTRY YOU THINK WILL WIN EUROVISION 2026!
       </p>
 
       {winner && (

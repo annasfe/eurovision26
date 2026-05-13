@@ -76,7 +76,6 @@ export default function UsernameEntry({ onEnter, onDashboard }) {
       </button>
 
       <p style={{ fontSize: '0.8rem', color: '#444', textAlign: 'center', lineHeight: 2 }}>
-        COMPLETE ALL 3 TABS TO SUBMIT YOUR BETS<br/>
         ONE ENTRY PER PLAYER
       </p>
     </div>

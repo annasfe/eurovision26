@@ -36,7 +36,7 @@ export default function Dashboard({ onBack }) {
   }
 
   const winnerTally = bets ? tally(bets.map(b => b.winner)) : []
-  const top5Tally   = bets ? tally(bets.flatMap(b => b.top5 ?? [])) : []
+  // const top5Tally = bets ? tally(bets.flatMap(b => b.top5 ?? [])) : []  // temporarily disabled
   const greekPositions = bets ? bets.map(b => b.greek_pos).filter(Boolean) : []
   const greekAvg   = greekPositions.length
     ? Math.round(greekPositions.reduce((a, b) => a + b, 0) / greekPositions.length)
@@ -46,7 +46,7 @@ export default function Dashboard({ onBack }) {
     : null
 
   const maxWinner = winnerTally[0]?.count ?? 1
-  const maxTop5   = top5Tally[0]?.count   ?? 1
+  // const maxTop5 = top5Tally[0]?.count ?? 1  // temporarily disabled
 
   return (
     <div className="dashboard">
@@ -96,53 +96,36 @@ export default function Dashboard({ onBack }) {
             </div>
           </div>
 
-          <div className="dash-grid">
-            {/* ── WINNER VOTES ── */}
-            <div className="pixel-box yellow">
-              <h3 style={{ marginBottom: '14px' }}>⭐ WINNER VOTES</h3>
-              {winnerTally.length === 0
-                ? <p style={{ fontSize: '0.85rem', color: '#555' }}>NO VOTES YET</p>
-                : winnerTally.slice(0, 10).map(({ id, count, song }, i) => (
-                  <div key={id} className="bar-row">
-                    <span className="bar-label">
-                      {song?.flag} {song?.country ?? id}
-                    </span>
-                    <div className="bar-track">
-                      <div
-                        className={`bar-fill ${BAR_COLORS[i % BAR_COLORS.length]}`}
-                        style={{ width: `${Math.round((count / maxWinner) * 100)}%` }}
-                      />
-                    </div>
-                    <span className="bar-count">{count}</span>
+          {/* ── WINNER VOTES (full width while top5 is disabled) ── */}
+          <div className="pixel-box yellow" style={{ marginBottom: '16px' }}>
+            <h3 style={{ marginBottom: '14px' }}>⭐ WINNER VOTES</h3>
+            {winnerTally.length === 0
+              ? <p style={{ fontSize: '0.85rem', color: '#555' }}>NO VOTES YET</p>
+              : winnerTally.slice(0, 10).map(({ id, count, song }, i) => (
+                <div key={id} className="bar-row">
+                  <span className="bar-label">
+                    {song?.flag} {song?.country ?? id}
+                  </span>
+                  <div className="bar-track">
+                    <div
+                      className={`bar-fill ${BAR_COLORS[i % BAR_COLORS.length]}`}
+                      style={{ width: `${Math.round((count / maxWinner) * 100)}%` }}
+                    />
                   </div>
-                ))
-              }
-            </div>
-
-            {/* ── TOP 5 FREQUENCY ── */}
-            <div className="pixel-box magenta">
-              <h3 style={{ marginBottom: '14px', color: 'var(--magenta)', textShadow: 'var(--glow-m)' }}>
-                🏆 TOP 5 PICKS
-              </h3>
-              {top5Tally.length === 0
-                ? <p style={{ fontSize: '0.85rem', color: '#555' }}>NO VOTES YET</p>
-                : top5Tally.slice(0, 10).map(({ id, count, song }, i) => (
-                  <div key={id} className="bar-row">
-                    <span className="bar-label">
-                      {song?.flag} {song?.country ?? id}
-                    </span>
-                    <div className="bar-track">
-                      <div
-                        className={`bar-fill ${BAR_COLORS[i % BAR_COLORS.length]}`}
-                        style={{ width: `${Math.round((count / maxTop5) * 100)}%` }}
-                      />
-                    </div>
-                    <span className="bar-count">{count}</span>
-                  </div>
-                ))
-              }
-            </div>
+                  <span className="bar-count">{count}</span>
+                </div>
+              ))
+            }
           </div>
+
+          {/* TOP 5 PICKS — temporarily disabled
+          <div className="pixel-box magenta" style={{ marginBottom: '16px' }}>
+            <h3 style={{ marginBottom: '14px', color: 'var(--magenta)', textShadow: 'var(--glow-m)' }}>
+              🏆 TOP 5 PICKS
+            </h3>
+            ...
+          </div>
+          */}
 
           {/* ── GREEK POSITION DISTRIBUTION ── */}
           {greekPositions.length > 0 && (
@@ -180,7 +163,7 @@ export default function Dashboard({ onBack }) {
                       <tr>
                         <th>PLAYER</th>
                         <th>WINNER</th>
-                        <th>TOP 5</th>
+                        {/* <th>TOP 5</th> */}
                         <th>🇬🇷 POS</th>
                         <th>TIME</th>
                       </tr>
@@ -196,9 +179,7 @@ export default function Dashboard({ onBack }) {
                             <td style={{ whiteSpace: 'nowrap' }}>
                               {winnerSong?.flag} {winnerSong?.country ?? bet.winner}
                             </td>
-                            <td>
-                              {(bet.top5 ?? []).map(id => getSong(id)?.flag ?? '?').join(' ')}
-                            </td>
+                            {/* <td>{(bet.top5 ?? []).map(id => getSong(id)?.flag ?? '?').join(' ')}</td> */}
                             <td style={{ color: 'var(--yellow)', textAlign: 'center' }}>
                               #{bet.greek_pos}
                             </td>

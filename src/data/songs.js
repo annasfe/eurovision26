@@ -1,10 +1,9 @@
 // Eurovision 2026 — Vienna, Austria
 // Grand Final: 16 May 2026
-// Semi-Final 1: 12 May 2026  |  Semi-Final 2: 14 May 2026
+// Semi-Final 1: 12 May 2026 (DONE) | Semi-Final 2: 14 May 2026
 //
-// `semifinal`: 'auto' = Big 4 + host (always in final) | 'sf1' | 'sf2'
-// `qualifies`: true = confirmed finalist | false = eliminated | null = TBD
-// `video`: update with individual official YouTube URLs if needed
+// `semifinal`: 'auto' = Big 4 + host | 'sf1' | 'sf2'
+// `qualifies`: true = Grand Final confirmed | false = eliminated | null = SF2 TBD
 
 export const SONGS = [
   // ── AUTO-QUALIFIERS (Big 4 + Host) ──────────────────────────────────────
@@ -14,7 +13,6 @@ export const SONGS = [
     flag: '🇦🇹',
     artist: 'COSMÓ',
     song: 'Tanzschein',
-    video: 'https://www.youtube.com/watch?v=DkXJGBxqVOI',
     semifinal: 'auto',
     qualifies: true,
   },
@@ -24,7 +22,6 @@ export const SONGS = [
     flag: '🇫🇷',
     artist: 'Monroe',
     song: 'Regarde !',
-    video: 'https://www.youtube.com/watch?v=Ioa7TBuPMtE',
     semifinal: 'auto',
     qualifies: true,
   },
@@ -34,7 +31,6 @@ export const SONGS = [
     flag: '🇩🇪',
     artist: 'Sarah Engels',
     song: 'Fire',
-    video: 'https://www.youtube.com/watch?v=4MmWNFfFxZA',
     semifinal: 'auto',
     qualifies: true,
   },
@@ -44,7 +40,6 @@ export const SONGS = [
     flag: '🇮🇹',
     artist: 'Sal Da Vinci',
     song: 'Per sempre sì',
-    video: 'https://www.youtube.com/watch?v=jY3hfWpFkDA',
     semifinal: 'auto',
     qualifies: true,
   },
@@ -54,21 +49,19 @@ export const SONGS = [
     flag: '🇬🇧',
     artist: 'Look Mum No Computer',
     song: 'Eins, Zwei, Drei',
-    video: 'https://www.youtube.com/watch?v=Y9_d9UHhKtI',
     semifinal: 'auto',
     qualifies: true,
   },
 
-  // ── SEMI-FINAL 1 (12 May) ────────────────────────────────────────────────
+  // ── SEMI-FINAL 1 — QUALIFIED ✓ ──────────────────────────────────────────
   {
     id: 'greece',
     country: 'Greece',
     flag: '🇬🇷',
     artist: 'Akylas',
     song: 'Ferto',
-    video: 'https://www.youtube.com/watch?v=SvTuiVDnVsw',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'moldova',
@@ -76,9 +69,8 @@ export const SONGS = [
     flag: '🇲🇩',
     artist: 'Satoshi',
     song: 'Viva Moldova!',
-    video: 'https://www.youtube.com/watch?v=hVr0gdM_Wkg',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'sweden',
@@ -86,9 +78,8 @@ export const SONGS = [
     flag: '🇸🇪',
     artist: 'FELICIA',
     song: 'My System',
-    video: 'https://www.youtube.com/watch?v=3xS3fGJzBuM',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'croatia',
@@ -96,9 +87,8 @@ export const SONGS = [
     flag: '🇭🇷',
     artist: 'LELEK',
     song: 'Andromeda',
-    video: 'https://www.youtube.com/watch?v=Qn5LIqwGWAo',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'belgium',
@@ -106,9 +96,8 @@ export const SONGS = [
     flag: '🇧🇪',
     artist: 'Essyla',
     song: 'Dancing on the Ice',
-    video: 'https://www.youtube.com/watch?v=G6yw1JYVl3E',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'lithuania',
@@ -116,19 +105,8 @@ export const SONGS = [
     flag: '🇱🇹',
     artist: 'Lion Ceecah',
     song: 'Sólo quiero más',
-    video: 'https://www.youtube.com/watch?v=nAE48a-Dtys',
     semifinal: 'sf1',
-    qualifies: null,
-  },
-  {
-    id: 'sanmarino',
-    country: 'San Marino',
-    flag: '🇸🇲',
-    artist: 'Senhit feat. Boy George',
-    song: 'Superstar',
-    video: 'https://www.youtube.com/watch?v=5HFTjMINITU',
-    semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'finland',
@@ -136,28 +114,45 @@ export const SONGS = [
     flag: '🇫🇮',
     artist: 'Windows95man',
     song: 'Liekinheitin',
-    video: 'https://www.youtube.com/watch?v=2VFt3bGKHJU',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
   {
-    id: 'georgia',
-    country: 'Georgia',
-    flag: '🇬🇪',
-    artist: 'Mariam Kakhelishvili',
-    song: 'On Replay',
-    video: 'https://www.youtube.com/watch?v=rEeXYjVNp0g',
+    id: 'israel',
+    country: 'Israel',
+    flag: '🇮🇱',
+    artist: 'Yuval Raphael',
+    song: 'New Day Will Rise',
     semifinal: 'sf1',
-    qualifies: null,
+    qualifies: true,
   },
+  {
+    id: 'serbia',
+    country: 'Serbia',
+    flag: '🇷🇸',
+    artist: 'Teodora',
+    song: 'Kraj mene',
+    semifinal: 'sf1',
+    qualifies: true,
+  },
+  {
+    id: 'poland',
+    country: 'Poland',
+    flag: '🇵🇱',
+    artist: 'Daria',
+    song: 'Tańczymy',
+    semifinal: 'sf1',
+    qualifies: true,
+  },
+
+  // ── SEMI-FINAL 2 — TBD (14 May) ─────────────────────────────────────────
   {
     id: 'latvia',
     country: 'Latvia',
     flag: '🇱🇻',
     artist: 'Tautumeitas',
     song: 'Ēnā',
-    video: 'https://www.youtube.com/watch?v=P5JsUFbhFaI',
-    semifinal: 'sf1',
+    semifinal: 'sf2',
     qualifies: null,
   },
   {
@@ -166,18 +161,7 @@ export const SONGS = [
     flag: '🇩🇰',
     artist: 'ALMA',
     song: 'Før vi går hjem',
-    video: 'https://www.youtube.com/watch?v=k4kzG7N7Q0Q',
-    semifinal: 'sf1',
-    qualifies: null,
-  },
-  {
-    id: 'israel',
-    country: 'Israel',
-    flag: '🇮🇱',
-    artist: 'Yuval Raphael',
-    song: 'New Day Will Rise',
-    video: 'https://www.youtube.com/watch?v=q0KRjBXVD_g',
-    semifinal: 'sf1',
+    semifinal: 'sf2',
     qualifies: null,
   },
   {
@@ -186,8 +170,7 @@ export const SONGS = [
     flag: '🇧🇬',
     artist: 'SYMBA',
     song: 'Bangaranga',
-    video: 'https://www.youtube.com/watch?v=8R_RbF8gCPA',
-    semifinal: 'sf1',
+    semifinal: 'sf2',
     qualifies: null,
   },
   {
@@ -196,29 +179,15 @@ export const SONGS = [
     flag: '🇨🇾',
     artist: 'JALLA',
     song: 'Hallucination',
-    video: 'https://www.youtube.com/watch?v=TlGb_JHkS6Y',
-    semifinal: 'sf1',
+    semifinal: 'sf2',
     qualifies: null,
   },
-  {
-    id: 'estonia',
-    country: 'Estonia',
-    flag: '🇪🇪',
-    artist: 'Tommy Cash',
-    song: 'Too Epic To Be True',
-    video: 'https://www.youtube.com/watch?v=2wvFjy44oiQ',
-    semifinal: 'sf1',
-    qualifies: null,
-  },
-
-  // ── SEMI-FINAL 2 (14 May) ────────────────────────────────────────────────
   {
     id: 'armenia',
     country: 'Armenia',
     flag: '🇦🇲',
     artist: 'SIMÓN',
     song: 'Paloma Rumba',
-    video: 'https://www.youtube.com/watch?v=v3YN8u5COnA',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -228,7 +197,6 @@ export const SONGS = [
     flag: '🇦🇺',
     artist: 'Delta Goodrem',
     song: 'Eclipse',
-    video: 'https://www.youtube.com/watch?v=b26H_hGwJgg',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -238,7 +206,6 @@ export const SONGS = [
     flag: '🇦🇱',
     artist: 'Alis Veliu',
     song: 'Nân',
-    video: 'https://www.youtube.com/watch?v=kCk0LQkgSao',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -248,7 +215,6 @@ export const SONGS = [
     flag: '🇦🇿',
     artist: 'Mamagama',
     song: 'Just Go',
-    video: 'https://www.youtube.com/watch?v=WA3Y9UxZ0QE',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -258,7 +224,6 @@ export const SONGS = [
     flag: '🇨🇿',
     artist: 'Kateřina Šlégrová',
     song: 'Crossroads',
-    video: 'https://www.youtube.com/watch?v=VBcjJ8uAelI',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -268,7 +233,6 @@ export const SONGS = [
     flag: '🇱🇺',
     artist: 'Laura Thorn',
     song: 'Mother Nature',
-    video: 'https://www.youtube.com/watch?v=b9b5q1R8VW4',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -278,17 +242,6 @@ export const SONGS = [
     flag: '🇲🇹',
     artist: 'Miriana Conte',
     song: 'Serving',
-    video: 'https://www.youtube.com/watch?v=9k4f3XHTNLQ',
-    semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'serbia',
-    country: 'Serbia',
-    flag: '🇷🇸',
-    artist: 'Teodora',
-    song: 'Kraj mene',
-    video: 'https://www.youtube.com/watch?v=T1b5GvP-9Pg',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -298,17 +251,6 @@ export const SONGS = [
     flag: '🇺🇦',
     artist: 'Leléka',
     song: 'Ridnym',
-    video: 'https://www.youtube.com/watch?v=XNw1F8z0_bA',
-    semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'portugal',
-    country: 'Portugal',
-    flag: '🇵🇹',
-    artist: 'Napa',
-    song: 'Deslocado',
-    video: 'https://www.youtube.com/watch?v=b5n8v7J3h8E',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -318,7 +260,6 @@ export const SONGS = [
     flag: '🇳🇴',
     artist: 'Kyle Alessandro',
     song: 'Lighter',
-    video: 'https://www.youtube.com/watch?v=2F_NKQrOH7k',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -328,27 +269,6 @@ export const SONGS = [
     flag: '🇨🇭',
     artist: 'Zoë Më',
     song: 'Voyage',
-    video: 'https://www.youtube.com/watch?v=KP3fPlTYUi4',
-    semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'poland',
-    country: 'Poland',
-    flag: '🇵🇱',
-    artist: 'Daria',
-    song: 'Tańczymy',
-    video: 'https://www.youtube.com/watch?v=gN5hX8i2GdQ',
-    semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'montenegro',
-    country: 'Montenegro',
-    flag: '🇲🇪',
-    artist: 'Nina Žižić',
-    song: 'Dobrodošli',
-    video: 'https://www.youtube.com/watch?v=oq3v8JkHL4M',
     semifinal: 'sf2',
     qualifies: null,
   },
@@ -357,8 +277,8 @@ export const SONGS = [
 // The Greek entry for position betting
 export const GREEK_SONG = SONGS.find((s) => s.id === 'greece')
 
-// Full betting pool (all participating countries)
-export const BETTING_POOL = SONGS
+// Betting pool: auto-qualifiers + SF1 qualifiers + SF2 contenders (exclude eliminated)
+export const BETTING_POOL = SONGS.filter((s) => s.qualifies !== false)
 
-// Grand Final count (Big 4 + host + 10 from each SF = 25)
+// Grand Final count (Big 4 + host + 10 from SF1 + 10 from SF2 = 25)
 export const TOTAL_FINALISTS = 25

@@ -234,14 +234,14 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
   text-shadow: var(--glow-c);
 }
 .tab-btn.done {
-  color: var(--green);
-  border-color: var(--green);
+  color: var(--dim);
+  border-color: var(--dim);
 }
 .tab-btn.done.active {
-  color: var(--green);
-  border-color: var(--green);
-  background: rgba(0,255,102,0.06);
-  text-shadow: var(--glow-g);
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: rgba(0,255,255,0.06);
+  text-shadow: var(--glow-c);
 }
 .tab-content {
   border: 3px solid var(--cyan);
