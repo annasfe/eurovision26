@@ -32,15 +32,14 @@ export default function UsernameEntry({ onEnter, onDashboard }) {
   return (
     <div className="username-screen">
       <div className="header">
-        <h1>🎤 EUROVISION<br/>2026 BETTING</h1>
+        <h1>EUROVISION 2026</h1>
         <p className="header-sub blink">★ INSERT COIN TO PLAY ★</p>
       </div>
 
       <div className="pixel-box green">
         <p style={{ fontSize: '0.9rem', color: 'var(--cyan)', marginBottom: '16px', lineHeight: 2 }}>
-          VIENNA 2026 — 16 MAY<br/>
-          PLACE YOUR BETS. MAY THE<br/>
-          BEST SONG WIN!
+          PLACE YOUR BETS. <br/> 
+          MAY THE BEST SONG WIN!
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -73,7 +72,7 @@ export default function UsernameEntry({ onEnter, onDashboard }) {
       </div>
 
       <button className="btn btn-magenta" onClick={onDashboard} style={{ width: '100%' }}>
-        📊 VIEW BETS DASHBOARD
+        VIEW BETS DASHBOARD
       </button>
 
       <p style={{ fontSize: '0.8rem', color: '#444', textAlign: 'center', lineHeight: 2 }}>
