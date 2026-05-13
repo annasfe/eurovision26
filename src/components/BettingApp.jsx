@@ -96,8 +96,8 @@ export default function BettingApp({ username, onSuccess, onDashboard }) {
       )}
 
       <div style={{ textAlign: 'center', marginTop: '16px' }}>
-        <button className="btn btn-magenta" onClick={onDashboard} style={{ fontSize: '0.8rem', padding: '6px 12px' }}>
-          VIEW BETS
+        <button className="btn btn-magenta" onClick={onDashboard}>
+          VIEW BETS DASHBOARD
         </button>
       </div>
     </div>

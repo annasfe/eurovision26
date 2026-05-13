@@ -35,9 +35,6 @@ export default function WinnerTab({ winner, setWinner }) {
             <span className="song-country">{song.country}</span>
             <span className="song-artist">{song.artist}</span>
             <span className="song-title">"{song.song}"</span>
-            <span className={`tag tag-${song.semifinal}`}>
-              {song.semifinal === 'auto' ? 'AUTO' : song.semifinal.toUpperCase()}
-            </span>
           </div>
         ))}
       </div>

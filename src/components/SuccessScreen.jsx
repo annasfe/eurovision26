@@ -44,7 +44,7 @@ export default function SuccessScreen({ username, winner, top5, greekPos, songs,
       <div className="success-stars">★ ★ ★ ★ ★</div>
 
       <button className="btn btn-magenta" onClick={onDashboard} style={{ margin: '12px 0' }}>
-        📊 VIEW ALL BETS
+        VIEW ALL BETS
       </button>
 
       <p style={{ fontSize: '0.8rem', color: '#555', lineHeight: 2 }}>

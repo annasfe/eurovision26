@@ -51,8 +51,8 @@ export default function Dashboard({ onBack }) {
   return (
     <div className="dashboard">
       <div className="header">
-        <h1>📊 HALL OF BETS</h1>
-        <p className="header-sub">LIVE ANALYTICS — EUROVISION 2026</p>
+        <h1>HALL OF BETS</h1>
+        <p className="header-sub">EUROVISION 2026 DASHBOARD</p>
       </div>
 
       <div className="dash-back-btn" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
