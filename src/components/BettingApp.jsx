@@ -15,7 +15,7 @@ export default function BettingApp({ username, onSuccess, onDashboard }) {
   const [activeTab, setActiveTab] = useState('winner')
   // const [top5,   setTop5]  = useState([])             // temporarily disabled
   const [winner,    setWinner]    = useState(null)
-  const [greekPos,  setGreekPos]  = useState(13)
+  const [greekPos,  setGreekPos]  = useState(null)
   const [submitting, setSubmitting] = useState(false)
   const [error,     setError]     = useState('')
 

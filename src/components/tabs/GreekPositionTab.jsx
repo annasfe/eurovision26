@@ -5,7 +5,7 @@ export default function GreekPositionTab({ greekPos, setGreekPos }) {
     return Math.max(1, Math.min(TOTAL_FINALISTS, v))
   }
 
-  const pos = greekPos ?? 13
+  const pos = greekPos ?? 1
 
   function update(v) {
     setGreekPos(clamp(v))
