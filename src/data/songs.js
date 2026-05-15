@@ -145,16 +145,7 @@ export const SONGS = [
     qualifies: true,
   },
 
-  // ── SEMI-FINAL 2 — TBD (14 May) ─────────────────────────────────────────
-  {
-    id: 'latvia',
-    country: 'Latvia',
-    flag: '🇱🇻',
-    artist: 'Tautumeitas',
-    song: 'Ēnā',
-    semifinal: 'sf2',
-    qualifies: null,
-  },
+  // ── SEMI-FINAL 2 — QUALIFIED ✓ ──────────────────────────────────────────
   {
     id: 'denmark',
     country: 'Denmark',
@@ -162,7 +153,7 @@ export const SONGS = [
     artist: 'ALMA',
     song: 'Før vi går hjem',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'bulgaria',
@@ -171,7 +162,7 @@ export const SONGS = [
     artist: 'SYMBA',
     song: 'Bangaranga',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'cyprus',
@@ -180,16 +171,7 @@ export const SONGS = [
     artist: 'JALLA',
     song: 'Hallucination',
     semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'armenia',
-    country: 'Armenia',
-    flag: '🇦🇲',
-    artist: 'SIMÓN',
-    song: 'Paloma Rumba',
-    semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'australia',
@@ -198,7 +180,7 @@ export const SONGS = [
     artist: 'Delta Goodrem',
     song: 'Eclipse',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'albania',
@@ -207,16 +189,7 @@ export const SONGS = [
     artist: 'Alis Veliu',
     song: 'Nân',
     semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'azerbaijan',
-    country: 'Azerbaijan',
-    flag: '🇦🇿',
-    artist: 'Mamagama',
-    song: 'Just Go',
-    semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'czechia',
@@ -225,16 +198,7 @@ export const SONGS = [
     artist: 'Kateřina Šlégrová',
     song: 'Crossroads',
     semifinal: 'sf2',
-    qualifies: null,
-  },
-  {
-    id: 'luxembourg',
-    country: 'Luxembourg',
-    flag: '🇱🇺',
-    artist: 'Laura Thorn',
-    song: 'Mother Nature',
-    semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'malta',
@@ -243,7 +207,7 @@ export const SONGS = [
     artist: 'Miriana Conte',
     song: 'Serving',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'ukraine',
@@ -252,7 +216,7 @@ export const SONGS = [
     artist: 'Leléka',
     song: 'Ridnym',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
     id: 'norway',
@@ -261,16 +225,16 @@ export const SONGS = [
     artist: 'Kyle Alessandro',
     song: 'Lighter',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
   {
-    id: 'switzerland',
-    country: 'Switzerland',
-    flag: '🇨🇭',
-    artist: 'Zoë Më',
-    song: 'Voyage',
+    id: 'romania',
+    country: 'Romania',
+    flag: '🇷🇴',
+    artist: 'Alexandra Căpitănescu',
+    song: 'Choke Me',
     semifinal: 'sf2',
-    qualifies: null,
+    qualifies: true,
   },
 ]
 
