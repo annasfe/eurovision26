@@ -91,7 +91,6 @@ body::after {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
-
 /* ── TYPOGRAPHY ── */
 h1 { font-size: 1.8rem; animation: rainbow 4s linear infinite; line-height: 1.4; text-align: center; }
 h2 { font-size: 1.1rem; color: var(--cyan); text-shadow: var(--glow-c); }
@@ -523,11 +522,9 @@ input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
   font-size: 0.85rem;
 }
 .bar-label {
-  width: 130px;
+  width: 200px;
   flex-shrink: 0;
   color: var(--white);
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .bar-track {

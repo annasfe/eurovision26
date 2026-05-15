@@ -1,6 +1,6 @@
 import { BETTING_POOL } from '../../data/songs'
 
-const MAX = 5
+const MAX = 3
 
 export default function Top5Tab({ top5, setTop5 }) {
   function toggle(id) {
@@ -15,10 +15,9 @@ export default function Top5Tab({ top5, setTop5 }) {
 
   return (
     <div>
-      <h2 style={{ marginBottom: '6px' }}>TOP 5 COUNTRIES</h2>
+      <h2 style={{ marginBottom: '6px' }}>TOP 3 COUNTRIES</h2>
       <p style={{ fontSize: '0.85rem', color: '#888', marginBottom: '12px', lineHeight: 1.8 }}>
-        PICK 5 COUNTRIES YOU THINK WILL<br/>
-        FINISH IN THE TOP 5!
+        PICK 3 COUNTRIES THAT WILL FINISH IN THE TOP 3!
       </p>
 
       <div className="progress-row">
@@ -73,9 +72,6 @@ export default function Top5Tab({ top5, setTop5 }) {
               <span className="song-country">{song.country}</span>
               <span className="song-artist">{song.artist}</span>
               <span className="song-title">"{song.song}"</span>
-              <span className={`tag tag-${song.semifinal}`}>
-                {song.semifinal === 'auto' ? 'AUTO' : song.semifinal.toUpperCase()}
-              </span>
             </div>
           )
         })}
