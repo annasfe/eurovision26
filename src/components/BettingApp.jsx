@@ -51,7 +51,8 @@ export default function BettingApp({ username, onSuccess, onDashboard }) {
   return (
     <div className="app">
       <div className="header">
-        <h1>EUROVISION 2026</h1>
+        <h1>COMIBET</h1>
+        <h2>EUROVISION 2026</h2>
         <p className="header-sub">
           PLAYER: <span className="glow-green">{username.toUpperCase()}</span>
         </p>

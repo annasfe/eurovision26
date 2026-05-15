@@ -32,7 +32,8 @@ export default function UsernameEntry({ onEnter, onDashboard }) {
   return (
     <div className="username-screen">
       <div className="header">
-        <h1>EUROVISION 2026</h1>
+        <h1>COMIBET</h1>
+        <h2>EUROVISION 2026</h2>
         <p className="header-sub blink">★ INSERT COIN TO PLAY ★</p>
       </div>
 
